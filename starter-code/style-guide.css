@@ -1,0 +1,41 @@
+.mode_1 {
+  --cyan-600: #4D96A9;
+  --cyan-300: #8FE3F9;
+  --purple-600: #855FB1;
+  --purple-300: #D9B8FF;
+  --slate-900: #28283D;
+  --slate-600: #87879D;
+  --slate-300: #D1D1DF;
+  --white: #FAFAFA;
+  --var-1400: 112px;
+  --var-1000: 80px;
+  --var-900: 72px;
+  --var-800: 64px;
+  --var-700: 56px;
+  --var-500: 40px;
+  --var-400: 32px;
+  --var-300: 24px;
+  --var-200: 16px;
+  --var-100: 8px;
+  --var-50: 4px;
+  --text-preset-1: 64px;
+  --text-preset-2: 40px;
+  --text-preset-3: 16px;
+  --text-preset-4: 18px;
+  --text-preset-5: 16px;
+  --text-preset-1: 48px;
+  --text-preset-2: 36px;
+  --text-preset-3: 14px;
+  --text-preset-4: 16px;
+  --text-preset-1: 40px;
+  --text-preset-2: 32px;
+  --text-preset-3: 12px;
+}
+.cyan-600 { color: var(--cyan-600); }
+.cyan-300 { color: var(--cyan-300); }
+.purple-600 { color: var(--purple-600); }
+.purple-300 { color: var(--purple-300); }
+.slate-900 { color: var(--slate-900); }
+.slate-600 { color: var(--slate-600); }
+.slate-300 { color: var(--slate-300); }
+.white { color: var(--white); }

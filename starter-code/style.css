@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --cyan-600: #4D96A9;
+    --cyan-300: #8FE3F9;
+    --purple-600: #855FB1;
+    --purple-300: #D9B8FF;
+    --slate-900: #28283D;
+    --slate-600: #87879D;
+    --slate-300: #D1D1DF;
+    --white: #FAFAFA;
+    --var-1400: 112px;
+    --var-1000: 80px;
+    --var-900: 72px;
+    --var-800: 64px;
+    --var-700: 56px;
+    --var-500: 40px;
+    --var-400: 32px;
+    --var-300: 24px;
+    --var-200: 16px;
+    --var-100: 8px;
+    --var-50: 4px;
+    --text-preset-1: 40px;
+    /* Mobile default */
+    --text-preset-2: 32px;
+    --text-preset-3: 12px;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 600px) {
+    :root {
+        --text-preset-1: 48px;
+        --text-preset-2: 36px;
+        --text-preset-3: 14px;
+    }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 1024px) {
+    :root {
+        --text-preset-1: 64px;
+        --text-preset-2: 40px;
+        --text-preset-3: 16px;
+    }
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--white);
+    color: var(--slate-900);
+    line-height: 1.5;
+    margin: 0 auto;
+
+}
+
+nav {
+    position: relative;
+    padding: var(--var-1000) var(--var-1000) 0 var(--var-1000);
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--var-800) var(--var-1000);
+    gap: var(--var-400);
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.hero-left,
+.hero-right {
+    position: absolute;
+    top: 5%;
+    width: auto;
+    /* Adjust width if necessary */
+    min-height: 400px;
+}
+
+.hero-left {
+    left: -1%;
+    /* Moves the left image outside the viewport */
+    object-fit: cover;
+}
+
+.hero-right {
+    right: -1%;
+    /* Moves the right image outside the viewport */
+    object-fit: cover;
+}
+
+
+.hero-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--var-400);
+    z-index: 1;
+    max-width: 440px;
+}
+
+.hero-center h1 {
+    color: var(--slate-900, #28283D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: var(--text-preset-1);
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+    /* 70.4px */
+}
+
+.hero-center p {
+    color: var(--slate-600, #87879D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    /* desktop/text-preset-4 */
+    font-family: "Red Hat Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--var-200);
+}
+
+.cta a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--var-200) var(--var-400);
+    gap: var(--var-100);
+    border-radius: var(--var-400);
+    background-color: var(--cyan-600, #855FB1);
+    color: var(--white, #FAFAFA);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    text-decoration: none;
+    gap: var(--var-50);
+}
+
+.cta-download .version {
+    color: var(--color-cyan-300, #8FE3F9);
+}
+
+.cta-about a{
+    background-color: var(--purple-600, #855FB1);
+}
