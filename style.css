@@ -74,6 +74,7 @@ nav {
     position: relative;
     overflow: hidden;
     text-align: center;
+    margin-bottom: -40px;
 }
 
 .hero-left,
@@ -169,7 +170,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: var(--var-800);
-    padding: var(--var-700) var(--var-1000) var(--var-900) var(--var-1000);
+    padding: var(--var-700) var(--var-1000) var(--var-800) var(--var-1000);
     width: 100vw;
     background: var(--white);
 }
