@@ -69,7 +69,6 @@ nav {
     align-items: center;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: var(--var-800) var(--var-1000);
     gap: var(--var-1400);
     width: 100vw;
     position: relative;
