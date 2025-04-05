@@ -351,7 +351,6 @@ footer .section-indicator {
     line-height: 1.5;
     font-weight: 500;
     color: var(--white);
-    max-width: 355px;
 }
 
 .footer-content a {
@@ -416,10 +415,24 @@ footer .section-indicator {
     .footer-container .tablet {
         display: block;
     }
+
+    footer, section, .hero {
+        padding: var(--var-800) var(--var-400);
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--var-400);
+        text-align: center;
+        max-width: 504px;
+    }
 }
 
-/* Mobile Styles: ≤599px */
-@media (max-width: 599px) {
+/* Mobile Styles: ≤650px */
+@media (max-width: 650px) {
     :root {
         --text-preset-1: 40px;
         --text-preset-2: 32px;
@@ -443,6 +456,17 @@ footer .section-indicator {
         gap: var(--var-200) !important;
     }
 
+    .hero{
+        padding: var(--var-800) var(--var-400) var(--var-400) var(--var-400);
+    }
+
+    section {
+        padding: var(--var-400) var(--var-400) var(--var-800) var(--var-400);
+    }
+
+    footer {
+        padding: var(--var-800) var(--var-400) var(--var-800) var(--var-400);
+    }
     /* Footer adjustments for mobile */
     .footer-container .tablet {
         display: none;
