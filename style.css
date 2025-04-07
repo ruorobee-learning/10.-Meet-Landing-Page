@@ -65,10 +65,10 @@ nav {
 }
 
 .hero {
-    display: grid;
+    display: flex;
+    flex-direction: row !important;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: var(--var-1400);
     width: 100vw;
     position: relative;
@@ -79,29 +79,22 @@ nav {
 
 .hero-left,
 .hero-right {
-
     min-height: 400px;
     object-fit: cover;
 }
 
-.hero-left {
-    left: -1%;
-}
 
-.hero-right {
-    right: -1%;
-}
 
 .hero-center {
     z-index: 1;
-    max-width: 100%;
+    max-width: 450px !important;
     display: flex;
     flex-direction: column;
     gap: var(--var-400);
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 416px;
+    min-width: 416px;
     margin: 0 auto;
 }
 
@@ -252,7 +245,7 @@ section {
 .section-title p {
     color: var(--cyan-600) !important;
     font-size: var(--text-preset-3);
-    font-weight: 900 !important;
+    font-weight: 800 !important;
     line-height: 110%;
     font-style: normal;
     font-feature-settings: 'liga' off, 'clig' off;
@@ -384,8 +377,12 @@ footer .section-indicator {
         --text-preset-3: 14px;
     }
 
+    nav {
+        padding: 48px var(--var-1000) 0;
+    }
+
     .hero {
-        flex-direction: column;
+        flex-direction: column !important;
         gap: var(--var-400);
     }
 
@@ -421,7 +418,7 @@ footer .section-indicator {
 
     .footer,
     section {
-    padding: var(--var-800) var(--var-400);
+        padding: var(--var-800) var(--var-400);
     }
 }
 
