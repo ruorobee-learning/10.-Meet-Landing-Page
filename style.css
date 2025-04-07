@@ -101,7 +101,8 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    min-width: 440px;
+    width: 416px;
+margin: 0 auto;
 }
 
 .hero-center h1 {
@@ -420,7 +421,7 @@ footer .section-indicator {
 
     .footer,
     section,
-    .hero {
+     {
         padding: var(--var-800) var(--var-400);
     }
 
@@ -459,6 +460,12 @@ footer .section-indicator {
         flex-direction: column;
     }
 
+    .hero-center {
+        gap: var(--var-200);
+        min-width: 95%;
+        padding: 0 var(--var-200);
+    }
+
     .hero-center h1 {
         font-size: var(--text-preset-1);
     }
@@ -472,9 +479,6 @@ footer .section-indicator {
         gap: var(--var-200) !important;
     }
 
-    .hero {
-        padding: var(--var-800) var(--var-400) var(--var-400) var(--var-400);
-    }
 
     section {
         padding: var(--var-400) var(--var-400) var(--var-800) var(--var-400);
