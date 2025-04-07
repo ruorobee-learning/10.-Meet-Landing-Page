@@ -299,7 +299,6 @@ footer .section-indicator {
     align-items: center;
     justify-content: center;
     width: 100%;
-    ;
     position: relative;
     padding: var(--var-1400) var(--var-1000);
 }
@@ -326,7 +325,7 @@ footer .section-indicator {
     color: white;
     width: 100%;
     max-width: 1120px;
-    display: grid;
+    display: grid ;
     grid-template-columns: 5fr 4fr 3fr;
     align-items: topG;
     gap: var(--var-400);
@@ -420,7 +419,7 @@ footer .section-indicator {
     section {
         padding: var(--var-800) var(--var-400);
     }
-}
+
 
 .hero {
     display: flex;
@@ -443,7 +442,7 @@ footer .section-indicator {
     text-align: center;
     max-width: 504px;
 }
-
+}
 
 /* Mobile Styles: ≤650px */
 @media (max-width: 650px) {
